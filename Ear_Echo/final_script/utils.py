@@ -125,11 +125,11 @@ def filtering(array,xf):
         if ((xf[i])>F_min and (xf[i])<F_max):
             a[i]=(array[i]) 
 
-    return a
+    return (a)
 
-def Dump_CSV(Tes_no, array):
+def Dump_CSV(filepath, array):
     # Write arrays to a CSV file
-    filepath = 'TF Data/TF'+Tes_no+'.csv' 
+    
 
     [[TF_Close_L,TF_OpM_L,TF_PullL_L,TF_PullR_L,TF_Eye_L],[TF_Close_R,TF_OpM_R,TF_PullL_R,TF_PullR_R,TF_Eye_R]] = array
 
